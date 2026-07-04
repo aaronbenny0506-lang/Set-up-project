@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Basic Flask App</h1>
+        <p>A simple starter project built with Python and Flask.</p>
+    </header>
+
+    <main>
+        <p>This page is served dynamically by Flask using a template.</p>
+        <a href="/about">Go to About page →</a>
+    </main>
+
+    <footer>
+        <p>&copy; {{ year }} My Flask App</p>
+    </footer>
+</body>
+</html>
